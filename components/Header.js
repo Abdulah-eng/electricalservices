@@ -15,6 +15,7 @@ const Header = ({ isScrolledUp }) => {
                     height={60}
                     priority
                     className={styles.logo}
+                    style={{ height: 'auto' }}
                 />
             </div>
         </header>

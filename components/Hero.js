@@ -14,6 +14,7 @@ const Hero = () => {
                     alt="Lux Electric Background"
                     fill
                     priority
+                    unoptimized
                     className={styles.bgImage}
                 />
                 <div className={styles.overlay}></div>
