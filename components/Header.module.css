@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: height var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 1rem;
+}
+
+.enlarged {
+    height: calc(var(--header-height) + 15px);
+}
+
+.logoContainer {
+    transition: transform var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enlarged .logoContainer {
+    transform: scale(1.1);
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
