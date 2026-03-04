@@ -10,7 +10,7 @@ const Hero = () => {
         <section className={styles.hero}>
             <div className={styles.backgroundWrapper}>
                 <Image
-                    src="/assets/hero-bg.png"
+                    src="/assets/hero-main.png"
                     alt="Lux Electric Background"
                     fill
                     priority
