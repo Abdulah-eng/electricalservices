@@ -4,20 +4,12 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './Hero.module.css';
 import { FileText, Siren } from 'lucide-react';
-import heroBg from '../public/assets/hero-main.png';
 
 const Hero = () => {
     return (
         <section className={styles.hero}>
             <div className={styles.backgroundWrapper}>
-                <Image
-                    src={heroBg}
-                    alt="Lux Electric Background"
-                    fill
-                    priority
-                    unoptimized
-                    className={styles.bgImage}
-                />
+                <div className={styles.bgImage}></div>
                 <div className={styles.overlay}></div>
             </div>
 
