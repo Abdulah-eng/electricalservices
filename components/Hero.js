@@ -21,12 +21,15 @@ const Hero = () => {
 
             <div className={styles.content}>
                 <h1 className={styles.title}>
-                    Expert Electrical <br />
-                    <span className={styles.highlight}>Services & Solutions</span>
+                    Trusted Expert Electrician <br />
+                    <span className={styles.highlight}>Services & Solutions in Jonesboro</span>
                 </h1>
                 <p className={styles.subtitle}>
-                    Your trusted local electricians for home and business.
+                    We are your one-stop solution for dedicated commercial, residential, and industrial electrician services. From minor light installations to large-scale industrial wiring projects, we are your trusted electrician team.
                 </p>
+                <div className={styles.learnMoreContainer}>
+                    <a href="#services" className={styles.learnMore}>[ LEARN MORE ]</a>
+                </div>
 
                 <div className={styles.buttonContainer}>
                     <a href="mailto:office@luxelectric.com?subject=Requesting a Free Quote" className={styles.primaryButton}>
