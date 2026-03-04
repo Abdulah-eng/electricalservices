@@ -9,7 +9,7 @@ const Header = ({ isScrolledUp }) => {
         <header className={`${styles.header} ${isScrolledUp ? styles.enlarged : ''}`}>
             <div className={styles.logoContainer}>
                 <Image
-                    src="/assets/logo.svg"
+                    src="/assets/logo-wide.svg"
                     alt="Lux Electric Logo"
                     width={280}
                     height={60}
