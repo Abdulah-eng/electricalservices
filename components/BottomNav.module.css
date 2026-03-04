@@ -3,23 +3,25 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: var(--bottom-nav-height);
-    background-color: var(--nav-bg);
-    backdrop-filter: blur(15px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    height: 80px;
+    /* slightly taller for better mobile touch target */
+    background-color: var(--primary-bg);
+    /* dark blue top border effect */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     z-index: 9999;
     padding-bottom: env(safe-area-inset-bottom);
+    border-top: 2px solid var(--primary-bg);
 }
 
 .navContainer {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
     width: 100%;
-    max-width: 500px;
+    background-color: #f2f2f2;
+    /* Off-white background */
 }
 
 .navItem {
@@ -27,35 +29,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 6px;
     flex: 1;
-    transition: transform 0.2s;
+    transition: background-color 0.2s;
     cursor: pointer;
     text-decoration: none;
+    border-right: 2px solid #ffffff;
+    /* White separators */
+    padding: 0.5rem 0;
+}
+
+.navItem:last-child {
+    border-right: none;
 }
 
 .navItem:active {
-    transform: scale(0.9);
+    background-color: #e0e0e0;
 }
 
 .iconWrapper {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .icon {
-    filter: brightness(0) invert(1);
     width: 100%;
     height: auto;
+    /* Removed filter. The original SVG is already #043D5C (dark blue) */
 }
 
 .label {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
-    color: var(--tertiary-accent);
-    text-transform: uppercase;
+    color: var(--primary-bg);
+    /* Dark blue text */
     letter-spacing: 0.5px;
 }

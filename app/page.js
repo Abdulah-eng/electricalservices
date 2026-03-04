@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
+import BottomNav from '../components/BottomNav';
 import styles from './page.module.css';
 import Image from 'next/image';
 import { FileText, Siren, Facebook, Instagram, Youtube, Linkedin, Info } from 'lucide-react';
@@ -133,6 +134,8 @@ export default function Home() {
 
                 <p className={styles.copyright}>&copy; 2026 Lux Electric, LLC. All rights reserved.<br />Design by Graphic Vision Creative Group.</p>
             </footer>
+
+            <BottomNav />
         </main>
     );
 }
